@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B3B3B3</color>
+    <color name="colorPrimaryDark">#D882CA31</color>
+    <color name="colorAccent">#D882CA31</color>
+    <color name="appColor">#D769C405</color>
+    <color name="red">#F70000</color>
+    <color name="light_red">#60F70000</color>
+    <color name="green">#D882CA31</color>
+    <color name="transparent_green">#BC76C221</color>
+    <color name="high_transparent_green">#3E76C221</color>
+    <color name="gray">#D8C2C2C2</color>
+</resources>

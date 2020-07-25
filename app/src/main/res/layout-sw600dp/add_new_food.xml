@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/foodlist_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="30sp"
+            app:met_baseColor="#000"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#000"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/foodlist_add_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Description"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="30sp"
+            app:met_baseColor="#000"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#000"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/foodlist_add_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Price"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="30sp"
+            app:met_baseColor="#000"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#000"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:visibility="gone"
+            android:id="@+id/foodlist_add_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Discount"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="30sp"
+            app:met_baseColor="#000"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#000"
+            app:met_singleLineEllipsis="true" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/food_selectBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Select"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                android:textSize="40sp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/food_uploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/transparent_green"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

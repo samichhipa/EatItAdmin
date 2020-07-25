@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "1029361260382",
+    "firebase_url": "https://eatitserver-3fac9.firebaseio.com",
+    "project_id": "eatitserver-3fac9",
+    "storage_bucket": "eatitserver-3fac9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029361260382:android:c61de18d3624e3dd24e1cf",
+        "android_client_info": {
+          "package_name": "com.example.eatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029361260382-k6hd5to67pjk8210fh263a5rdl63qkb7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eatit",
+            "certificate_hash": "6be1dfff6807980e1552e606895e48cbc8e3917e"
+          }
+        },
+        {
+          "client_id": "1029361260382-f52cnjv2qi61sm42fqe7rtb6s3ou69io.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eatit",
+            "certificate_hash": "1dcb7d3c8124308638fdff218afdb2fdb43cb754"
+          }
+        },
+        {
+          "client_id": "1029361260382-qsm10mk6l3mtl29rih4slbc9eggqsfpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrEyZFmN22YYbGNLvI_yH9x1DDsyzrHl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029361260382-qsm10mk6l3mtl29rih4slbc9eggqsfpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029361260382:android:5db48f3e033a6a4324e1cf",
+        "android_client_info": {
+          "package_name": "com.example.eatitadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029361260382-qrumrdv0fm8mnm855c1udu25tpuvb1k5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eatitadmin",
+            "certificate_hash": "6be1dfff6807980e1552e606895e48cbc8e3917e"
+          }
+        },
+        {
+          "client_id": "1029361260382-acngfpbft416hu25ocqsq85b426dbkop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eatitadmin",
+            "certificate_hash": "1dcb7d3c8124308638fdff218afdb2fdb43cb754"
+          }
+        },
+        {
+          "client_id": "1029361260382-qsm10mk6l3mtl29rih4slbc9eggqsfpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrEyZFmN22YYbGNLvI_yH9x1DDsyzrHl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029361260382-qsm10mk6l3mtl29rih4slbc9eggqsfpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:background="@drawable/bg_eatit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:fontFamily="@font/font_bold"
+        android:textSize="55sp"
+        android:layout_above="@id/lin"
+        android:layout_margin="10dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Table ID"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            app:met_primaryColor="#FFF"
+            app:met_baseColor="#FFF"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            android:maxLines="1"
+            app:met_maxCharacters="11"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:id="@+id/txt_phone"
+            />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="#FFF"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#FFF"
+            app:met_baseColor="#FFF"
+            app:met_singleLineEllipsis="true"
+            android:maxLines="1"
+            app:met_maxCharacters="11"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:id="@+id/txt_pass"
+            android:imeOptions="actionGo"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/login_signInBtn"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        android:padding="10dp"
+       android:background="@drawable/btn_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="Sign In"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

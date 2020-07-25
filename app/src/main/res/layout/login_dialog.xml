@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:elevation="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/login_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            android:textColor="#606060"
+            android:textSize="32sp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="10dp"
+            android:drawableTint="#000"
+            android:background="@drawable/dialog_edt"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Table ID"
+            android:textColor="#939393"
+            android:textColorHint="#939393"
+            app:met_primaryColor="#FFF"
+            app:met_baseColor="#FFF"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            android:maxLines="1"
+            app:met_maxCharacters="11"
+            android:inputType="phone"
+            android:textSize="20sp"
+            android:imeOptions="actionNext"
+            android:id="@+id/dialog_tableID_L"
+            app:met_textColorHint="#939393"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:maxLines="1"
+            android:imeOptions="actionGo"
+            android:id="@+id/dialog_password_L"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="#939393"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#FFF"
+            app:met_baseColor="#FFF"
+            app:met_singleLineEllipsis="true"
+            app:met_maxCharacters="11"
+            android:inputType="number"
+            android:textSize="20sp"
+            app:met_textColorHint="#939393"
+            android:background="@drawable/dialog_edt"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:drawableTint="#000"
+            />
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/dialog_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_color"
+            android:padding="10dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

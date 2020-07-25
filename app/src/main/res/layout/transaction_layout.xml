@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/txt_trans">
+
+    <TextView
+android:maxLines="1"
+        android:background="@drawable/txt_trans"
+        android:layout_weight="1.2"
+        android:layout_width="0dp"
+        android:text="OrderID"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:id="@+id/trans_order_id"
+        android:padding="10dp"/>
+    <TextView
+        android:maxLines="1"
+        android:text="Date,time"
+        android:background="@drawable/txt_trans"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/trans_date_time"
+        android:padding="10dp"/>
+    <TextView
+        android:maxLines="1"
+        android:text="Total"
+        android:background="@drawable/txt_trans"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/trans_order_total"
+        android:padding="10dp"/>
+    <TextView
+        android:maxLines="1"
+        android:text="Table No"
+        android:background="@drawable/txt_trans"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:id="@+id/trans_order_table_no"
+        android:padding="10dp"/>
+
+</LinearLayout>

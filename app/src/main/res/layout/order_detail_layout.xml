@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name:"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:id="@+id/order_item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="abc"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:id="@+id/order_item_quantity"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:id="@+id/order_item_price"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Price Discount"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:fontFamily="@font/font"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:id="@+id/order_item_discount"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
