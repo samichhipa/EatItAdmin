@@ -240,67 +240,67 @@ public class FoodListActivity extends AppCompatActivity implements FoodAdapter.o
 
             else {
 
-                final StorageReference fileReference = storageReference.child(System.currentTimeMillis()
-                        + "." + getExtensionFile(saveUri));
+                        final StorageReference fileReference = storageReference.child(System.currentTimeMillis()
+                                + "." + getExtensionFile(saveUri));
 
-                UploadTask uploadTask = fileReference.putFile(saveUri);
-                uploadTask.continueWithTask(new Continuation() {
-                    @Override
-                    public Object then(@NonNull Task task) throws Exception {
+                        UploadTask uploadTask = fileReference.putFile(saveUri);
+                        uploadTask.continueWithTask(new Continuation() {
+                            @Override
+                            public Object then(@NonNull Task task) throws Exception {
 
-                        if (!task.isComplete()) {
+                                if (!task.isComplete()) {
 
-                            throw task.getException();
-                        }
-                        return fileReference.getDownloadUrl();
+                                    throw task.getException();
+                                }
+                                return fileReference.getDownloadUrl();
+                            }
+                        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Uri> task) {
+                                if (task.isSuccessful()) {
+
+                                    Uri downloadUri = task.getResult();
+                                    String myUrl = downloadUri.toString();
+
+                                    newFoods = new Foods();
+                                    newFoods.setName(txtdialogname.getText().toString());
+                                    newFoods.setDescription(txtdialog_desc.getText().toString());
+                                    newFoods.setPrice(txtdialog_price.getText().toString());
+                                    newFoods.setDiscount("0");
+                                    newFoods.setImage(myUrl);
+                                    newFoods.setMenuID(categoryID);
+                                    newFoods.setFoodID(FoodID);
+                                    newFoods.setMenuName(catName);
+                                    newFoods.setStatus("Enabled");
+
+                                    progressDialog.dismiss();
+                                    Toast.makeText(FoodListActivity.this, categoryID, Toast.LENGTH_SHORT).show();
+
+
+                                } else {
+
+                                    // pd.dismiss();
+                                    progressDialog.dismiss();
+                                    Toast.makeText(FoodListActivity.this, "Failed", Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+
+                                progressDialog.dismiss();
+                                Toast.makeText(FoodListActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+
+                            }
+                        });
                     }
-                }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Uri> task) {
-                        if (task.isSuccessful()) {
 
-                            Uri downloadUri = task.getResult();
-                            String myUrl = downloadUri.toString();
+                } else {
+                    //pd.dismiss();
+                    progressDialog.dismiss();
+                    Toast.makeText(FoodListActivity.this, "No Image Selected", Toast.LENGTH_LONG).show();
 
-                            newFoods = new Foods();
-                            newFoods.setName(txtdialogname.getText().toString());
-                            newFoods.setDescription(txtdialog_desc.getText().toString());
-                            newFoods.setPrice(txtdialog_price.getText().toString());
-                            newFoods.setDiscount("0");
-                            newFoods.setImage(myUrl);
-                            newFoods.setMenuID(categoryID);
-                            newFoods.setFoodID(FoodID);
-                            newFoods.setMenuName(catName);
-                            newFoods.setStatus("Enabled");
-
-                            progressDialog.dismiss();
-                            Toast.makeText(FoodListActivity.this, categoryID, Toast.LENGTH_SHORT).show();
-
-
-                        } else {
-
-                            // pd.dismiss();
-                            progressDialog.dismiss();
-                            Toast.makeText(FoodListActivity.this, "Failed", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-
-                        progressDialog.dismiss();
-                        Toast.makeText(FoodListActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
-
-                    }
-                });
-            }
-
-        } else {
-            //pd.dismiss();
-            progressDialog.dismiss();
-            Toast.makeText(FoodListActivity.this, "No Image Selected", Toast.LENGTH_LONG).show();
-
-        }
+                }
     }
 
     private String getExtensionFile(Uri uri) {

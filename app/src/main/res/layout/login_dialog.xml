@@ -41,28 +41,27 @@
             android:textSize="32sp" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/dialog_tableID_L"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_edt"
             android:drawableLeft="@drawable/ic_profile"
             android:drawablePadding="10dp"
             android:drawableTint="#000"
-            android:background="@drawable/dialog_edt"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Table ID"
+            android:hint="Chef ID"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLines="1"
             android:textColor="#939393"
             android:textColorHint="#939393"
-            app:met_primaryColor="#FFF"
+            android:textSize="20sp"
             app:met_baseColor="#FFF"
             app:met_floatingLabel="highlight"
-            app:met_singleLineEllipsis="true"
-            android:maxLines="1"
             app:met_maxCharacters="11"
-            android:inputType="phone"
-            android:textSize="20sp"
-            android:imeOptions="actionNext"
-            android:id="@+id/dialog_tableID_L"
-            app:met_textColorHint="#939393"
-            />
+            app:met_primaryColor="#FFF"
+            app:met_singleLineEllipsis="true"
+            app:met_textColorHint="#939393" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:maxLines="1"

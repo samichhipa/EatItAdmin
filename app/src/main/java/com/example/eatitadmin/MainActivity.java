@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                                             dialog.dismiss();
                                             slogan.setVisibility(View.VISIBLE);
                                             logo.setVisibility(View.VISIBLE);
-                                            Toast.makeText(MainActivity.this, "User not exists..", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(MainActivity.this, "Chef not exists..", Toast.LENGTH_SHORT).show();
 
 
                                         }
@@ -363,7 +363,7 @@ public class MainActivity extends AppCompatActivity {
 
                         } else {
                             progressDialog.dismiss();
-                            Toast.makeText(MainActivity.this, "User not exists..", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Chef not exists..", Toast.LENGTH_SHORT).show();
 
 
                         }

@@ -80,6 +80,8 @@ public class MenuFragment extends Fragment implements CategoryAdapter.onItemClic
     CategoryAdapter adapter;
 
 
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 

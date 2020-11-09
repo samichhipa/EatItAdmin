@@ -3,77 +3,69 @@ package com.example.eatitadmin.Model;
 import java.util.List;
 
 public class Request {
-    String phone, name, total, status, orderID,tableNo,tax;
+    String Phone, Total, Status, OrderID, TableNo, Tax;
     List<Order> orderList;
+
 
     public Request() {
     }
 
-    public Request(String phone, String name, String total, String status, String orderID, String tableNo, List<Order> orderList,String Tax) {
-        this.phone = phone;
-        this.name = name;
-        this.total = total;
-        this.status = status;
-        this.orderID = orderID;
-        this.tableNo = tableNo;
+    public Request(String phone, String total, String status, String orderID, String tableNo, String tax, List<Order> orderList) {
+        Phone = phone;
+        Total = total;
+        Status = status;
+        OrderID = orderID;
+        TableNo = tableNo;
+        Tax = tax;
         this.orderList = orderList;
-        tax=Tax;
-    }
-
-    public String getTax() {
-        return tax;
-    }
-
-    public void setTax(String tax) {
-        this.tax = tax;
     }
 
     public String getPhone() {
-        return phone;
+        return Phone;
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        Phone = phone;
     }
 
     public String getTotal() {
-        return total;
+        return Total;
     }
 
     public void setTotal(String total) {
-        this.total = total;
+        Total = total;
     }
 
     public String getStatus() {
-        return status;
+        return Status;
     }
 
     public void setStatus(String status) {
-        this.status = status;
+        Status = status;
     }
 
     public String getOrderID() {
-        return orderID;
+        return OrderID;
     }
 
     public void setOrderID(String orderID) {
-        this.orderID = orderID;
+        OrderID = orderID;
     }
 
     public String getTableNo() {
-        return tableNo;
+        return TableNo;
     }
 
     public void setTableNo(String tableNo) {
-        this.tableNo = tableNo;
+        TableNo = tableNo;
+    }
+
+    public String getTax() {
+        return Tax;
+    }
+
+    public void setTax(String tax) {
+        Tax = tax;
     }
 
     public List<Order> getOrderList() {

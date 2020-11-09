@@ -328,7 +328,6 @@ public class BannerActivity extends AppCompatActivity implements BannerAdapter.o
 
         Toast.makeText(this,"delete banner"+selectedID,Toast.LENGTH_SHORT).show();
 
-
     }
 
     private void showUpdateDialog(final String selectedID, final Banner selectedItem) {

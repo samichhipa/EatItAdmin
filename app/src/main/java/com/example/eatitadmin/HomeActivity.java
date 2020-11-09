@@ -159,7 +159,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
  */
         View headerView = navigationView.getHeaderView(0);
-       // txtname = headerView.findViewById(R.id.home_txt_name);
+        // txtname = headerView.findViewById(R.id.home_txt_name);
         //txtname.setText(Common.currentUser.getName());
 
 
@@ -210,7 +210,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         } else if (id == R.id.nav_sign_out) {
 
-   token_ref.child(Common.currentUser.getPhone()).child("tokenID").setValue("");
+            token_ref.child(Common.currentUser.getPhone()).child("tokenID").setValue("");
 
             editor = this.getSharedPreferences("ADMIN_LOGIN", MODE_PRIVATE).edit();
             editor.putString("Phone", "");
@@ -234,8 +234,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onStart() {
         super.onStart();
-        SharedPreferences.Editor editor=this.getSharedPreferences("USER_INFO",MODE_PRIVATE).edit();
-        editor.putString("current_id",Common.currentUser.getPhone());
+        SharedPreferences.Editor editor = this.getSharedPreferences("USER_INFO", MODE_PRIVATE).edit();
+        editor.putString("current_id", Common.currentUser.getPhone());
         editor.apply();
 
     }
@@ -293,12 +293,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
 
-         alertDialog.dismiss();
+                alertDialog.dismiss();
             }
         });
 
-alertDialog.show();
-
+        alertDialog.show();
 
     }
 

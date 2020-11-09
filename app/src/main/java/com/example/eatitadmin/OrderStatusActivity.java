@@ -68,7 +68,7 @@ public class OrderStatusActivity extends AppCompatActivity implements OrderStatu
         order_recyclerview=findViewById(R.id.orderStatus_recyclerview);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
-        linearLayoutManager.setStackFromEnd(true);
+        //linearLayoutManager.setStackFromEnd(true);
         order_recyclerview.setLayoutManager(linearLayoutManager);
         requestList=new ArrayList<>();
         adapter=new OrderStatusAdapter(requestList,this);
